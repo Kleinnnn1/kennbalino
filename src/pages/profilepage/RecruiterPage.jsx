@@ -5,11 +5,14 @@ import LinkedInButton from "../../components/LinkedInButton";
 import BoxItem from "../../components/BoxItem";
 
 // Import sample images for boxes
-import workPermit from "../../assets/images/netflixicons/netflixblue.jpg";
-import skills from "../../assets/images/netflixicons/netflixblue.jpg";
-import experience from "../../assets/images/netflixicons/netflixblue.jpg";
-import certs from "../../assets/images/netflixicons/netflixblue.jpg";
-import projects from "../../assets/images/netflixicons/netflixblue.jpg";
+import skills from "../../assets/images/boximage/skillsimage.png";
+import experience from "../../assets/images/boximage/experienceimage.png";
+import certs from "../../assets/images/boximage/certificatesimage.png";
+import projects from "../../assets/images/boximage/projectsimage.jpg";
+import music from "../../assets/images/boximage/musicimage.jpg"
+import reading from "../../assets/images/boximage/readingimage.jpg"
+import blogs from "../../assets/images/boximage/blogsimage.jpg"
+import contactme from "../../assets/images/boximage/contactmeimage.jpg"
 
 function RecruiterPage() {
     return (
@@ -35,7 +38,7 @@ function RecruiterPage() {
                     <div className="-ml-10">
                         <h4 className="text-3xl font-bold mt-40">Kenneth Jhun N. Balino - Web Developer</h4>
                         <p className="mt-2 text-sm md:text-base max-w-3xl font-medium">
-                            Full-Stack Web Developer skilled in React, Django, and PostgreSQL, with a track record of building
+                            Full-Stack Web Developer skilled in React, Django, Supabase and PostgreSQL, with a track record of building
                             systems that boost efficiency by up to 40% and cut manual work by 30%. Delivered real-time platforms,
                             finance trackers, and CMS websites that increased engagement and streamlined operations. Recently
                             improved site uptime and support response as an IT Support and WordPress Developer. Passionate about
@@ -57,7 +60,6 @@ function RecruiterPage() {
             {/* Box Grid */}
             <div className="bg-black text-white py-6">
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
-                    <BoxItem image={workPermit} label="Work Permit" />
                     <BoxItem image={skills} label="Skills" />
                     <BoxItem image={experience} label="Experience" />
                     <BoxItem image={certs} label="Certifications" />
@@ -66,15 +68,15 @@ function RecruiterPage() {
             </div>
 
             {/* Section Heading */}
-            <h4 className="text-3xl font-bold mt-16 ml-10">Continue Watching for recruiter</h4>
+            <h4 className="text-3xl font-bold mt-16 ml-10">Continue Watching for Recruiter</h4>
 
             {/* Box Grid */}
             <div className="bg-black text-white py-6">
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
-                    <BoxItem image={workPermit} label="Music" />
-                    <BoxItem image={skills} label="Reading" />
-                    <BoxItem image={experience} label="Blogs" />
-                    <BoxItem image={certs} label="Contact Me" />
+                    <BoxItem image={music} label="Music" />
+                    <BoxItem image={reading} label="Reading" />
+                    <BoxItem image={blogs} label="Blogs" />
+                    <BoxItem image={contactme} label="Contact Me" />
                 </div>
             </div>
 

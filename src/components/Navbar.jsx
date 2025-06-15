@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import kennbalino from "../assets/images/kennbalino_logo_transparent.png";
 import netflixBlue from "../assets/images/netflixicons/netflixblue.jpg";
 
 function Navbar() {
   const [scrollY, setScrollY] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -12,7 +13,6 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Map scrollY (0-300) to opacity (0-1), cap it at 1
   const bgOpacity = Math.min(scrollY / 150, 1);
 
   return (
@@ -21,14 +21,14 @@ function Navbar() {
       style={{ backgroundColor: `rgba(0, 0, 0, ${bgOpacity})` }}
     >
       <nav className="flex items-center px-8 py-4 space-x-10">
+
         {/* Kenn Logo */}
-        <Link to="/">
           <img
             src={kennbalino}
             alt="Kenn Balino Logo"
+            onClick={() => navigate("/")}
             className="w-28 h-auto object-contain cursor-pointer"
           />
-        </Link>
 
         {/* Navigation Links */}
         <ul className="flex space-x-6 text-white font-medium text-sm">
@@ -43,7 +43,8 @@ function Navbar() {
         <img
           src={netflixBlue}
           alt="User Logo"
-          className="w-10 h-10 rounded-full object-cover ml-auto"
+          onClick={() => navigate("/browse")}
+          className="w-10 h-10 rounded-full object-cover ml-auto cursor-pointer"
         />
       </nav>
     </div>
