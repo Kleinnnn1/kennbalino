@@ -1,13 +1,40 @@
-# React + Vite
+# 🚀 kennbalino – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org)
+[![Vite](https://img.shields.io/badge/Vite-5.0-purple?logo=vite)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-blue?logo=tailwindcss)](https://tailwindcss.com)
+[![Deployed](https://img.shields.io/badge/Live-Demo-green?logo=vercel)](https://balino-kenn-portfolio.vercel.app)
 
-Currently, two official plugins are available:
+This is my personal **web developer portfolio**, built using **React + Vite**. It showcases my skills, recent work, and background as a frontend-focused developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# kennbalino
+- 🎨 **Frontend:** React, Tailwind CSS
+- ⚡ **Bundler:** Vite with HMR (Hot Module Replacement)
+- 📍 **Routing:** React Router DOM
+- 🧠 **State Management:** useState, useEffect (optionally Zustand or Redux)
+- 🚀 **Deployment:** Vercel (or Netlify)
+
+---
+
+## ✨ Features
+
+- 🔹 Fully responsive layout (mobile-first)
+- 🔹 Clean and minimalistic design
+- 🔹 Portfolio/project gallery with external links
+- 🔹 Downloadable resume
+
+
+---
+
+## 🧰 Getting Started
+
+To run this project locally:
+
+```bash
+git clone https://github.com/Kleinnnn1/kennbalino.git
+cd kennbalino
+npm install
+npm run dev
