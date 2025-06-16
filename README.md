@@ -5,7 +5,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-blue?logo=tailwindcss)](https://tailwindcss.com)
 [![Deployed](https://img.shields.io/badge/Live-Demo-green?logo=vercel)](https://balino-kenn-portfolio.vercel.app)
 
-This is my personal **web developer portfolio**, built using **React + Vite**. It showcases my skills, recent work, and background as a frontend-focused developer.
+This is my personal **web developer portfolio**, built using **React + Vite**. It showcases my skills, recent work, and background as a fullstack developer.
 
 ---
 
