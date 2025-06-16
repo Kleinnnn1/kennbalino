@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import recruitVideo from "../../assets/videos/recruitervideo.mp4";
 import ResumeButton from "../../components/ResumeButton";
@@ -60,7 +61,7 @@ function RecruiterPage() {
             {/* Box Grid */}
             <div className="bg-black text-white py-6">
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
-                    <BoxItem image={skills} label="Skills" />
+                    <BoxItem image={skills} label="Skills" to="/skills" />
                     <BoxItem image={experience} label="Experience" />
                     <BoxItem image={certs} label="Certifications" />
                     <BoxItem image={projects} label="Projects" />
@@ -79,7 +80,7 @@ function RecruiterPage() {
                     <BoxItem image={contactme} label="Contact Me" />
                 </div>
             </div>
-
+                <Outlet />
         </div>
     );
 }

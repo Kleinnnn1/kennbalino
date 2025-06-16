@@ -3,9 +3,11 @@ import netflixBlue from "../../assets/images/netflixicons/netflixblue.jpg";
 import netflixRed from "../../assets/images/netflixicons/netflixred.jpg";
 import netflixYellow from "../../assets/images/netflixicons/netflixyellow.jpg";
 import netflixGreen from "../../assets/images/netflixicons/netflixgreen.jpg";
+import useProfileStore from "../../store/useProfileStore";
 
 function BrowsePage() {
     const navigate = useNavigate();
+    const setProfile = useProfileStore((state) => state.setProfile);
 
     const profiles = [
         { name: "Recruiter", img: netflixBlue },
@@ -14,8 +16,13 @@ function BrowsePage() {
         { name: "Stalker", img: netflixRed },
     ];
 
-    const handleProfileClick = (name) => {
-        const routeName = name.toLowerCase();
+    const handleProfileClick = (profile) => {
+        setProfile(profile); // Save to store
+
+        // Log saved image (optional: confirm if it's saved right after)
+        console.log("Saved profile image:", profile.img);
+
+        const routeName = profile.name.toLowerCase();
         navigate(`/profile/${routeName}`);
     };
 
@@ -27,7 +34,7 @@ function BrowsePage() {
                 {profiles.map((profile, index) => (
                     <div
                         key={index}
-                        onClick={() => handleProfileClick(profile.name)}
+                        onClick={() => handleProfileClick(profile)}
                         className="flex flex-col items-center cursor-pointer group"
                     >
                         <div className="rounded-lg border-4 border-transparent group-hover:border-white transition-all">

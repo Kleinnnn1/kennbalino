@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import kennbalino from "../assets/images/kennbalino_logo_transparent.png";
-import netflixBlue from "../assets/images/netflixicons/netflixblue.jpg";
+import netflixRed from "../assets/images/netflixicons/netflixred.jpg";
+import useProfileStore from "../store/useProfileStore";
 
 function Navbar() {
+  const profile = useProfileStore((state) => state.profile);
   const [scrollY, setScrollY] = useState(0);
   const navigate = useNavigate();
 
@@ -23,29 +25,30 @@ function Navbar() {
       <nav className="flex items-center px-8 py-4 space-x-10">
 
         {/* Kenn Logo */}
-          <img
-            src={kennbalino}
-            alt="Kenn Balino Logo"
-            onClick={() => navigate("/")}
-            className="w-28 h-auto object-contain cursor-pointer"
-          />
+        <img
+          src={kennbalino}
+          alt="Kenn Balino Logo"
+          onClick={() => navigate("/")}
+          className="w-28 h-auto object-contain cursor-pointer"
+        />
 
         {/* Navigation Links */}
         <ul className="flex space-x-6 text-white font-medium text-sm">
-          <li className="hover:text-red-400 cursor-pointer">Home</li>
-          <li className="hover:text-red-400 cursor-pointer">Professional</li>
-          <li className="hover:text-red-400 cursor-pointer">Skills</li>
-          <li className="hover:text-red-400 cursor-pointer">Projects</li>
-          <li className="hover:text-red-400 cursor-pointer">Hire Me</li>
+          <li onClick={() => navigate("/")} className="hover:text-red-400 cursor-pointer">Home</li>
+          <li onClick={() => navigate("/professional")} className="hover:text-red-400 cursor-pointer">Professional</li>
+          <li onClick={() => navigate("/skills")} className="hover:text-red-400 cursor-pointer">Skills</li>
+          <li onClick={() => navigate("/projects")} className="hover:text-red-400 cursor-pointer">Projects</li>
+          <li onClick={() => navigate("/hire-me")} className="hover:text-red-400 cursor-pointer">Hire Me</li>
         </ul>
 
-        {/* Avatar/Image */}
+        {/* Profile/Image */}
         <img
-          src={netflixBlue}
-          alt="User Logo"
+          src={profile?.img || netflixRed} // fallback if no profile selected
+          alt="User Avatar"
           onClick={() => navigate("/browse")}
           className="w-10 h-10 rounded-full object-cover ml-auto cursor-pointer"
         />
+
       </nav>
     </div>
   );
