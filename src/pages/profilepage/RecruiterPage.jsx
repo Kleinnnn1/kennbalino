@@ -80,7 +80,6 @@ function RecruiterPage() {
                     <BoxItem image={contactme} label="Contact Me" />
                 </div>
             </div>
-                <Outlet />
         </div>
     );
 }

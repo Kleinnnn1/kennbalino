@@ -1,10 +1,15 @@
-import { FaPhp, FaReact, FaRegLightbulb, FaGithub, FaGitAlt, FaCode  } from "react-icons/fa";
+import { FaPhp, FaReact, FaRegLightbulb, FaGithub, FaGitAlt, FaCode } from "react-icons/fa";
 import { SiDjango, SiSupabase, SiTailwindcss, SiBootstrap, SiPostgresql, SiMysql, SiFigma, SiCanva, SiOpenai, SiWordpress } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { BsStars } from "react-icons/bs"; // for Gemini
 import Navbar from "../../components/Navbar";
+import { useEffect } from "react";
 
 function SkillsPage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const backendSkills = [
         {
             name: "Django (Python)",
@@ -107,6 +112,8 @@ function SkillsPage() {
             icon: <SiWordpress className="text-red-500" size={40} />,
         },
     ];
+
+
 
 
     return (
