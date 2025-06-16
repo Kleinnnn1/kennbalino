@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landpage from './pages/landpage/Landpage';
 import BrowsePage from './pages/browsepage/BrowsePage';
@@ -7,8 +6,7 @@ import DeveloperPage from './pages/profilepage/developerPage';
 import AdventurerPage from './pages/profilepage/AdventurerPage';
 import StalkerPage from './pages/profilepage/stalkerPage';
 import SkillsPage from './pages/boxpage/SkillsPage';
-
-
+import WorkExperiencePage from './pages/boxpage/WorkExperiencePage';
 
 function App() {
   return (
@@ -18,6 +16,7 @@ function App() {
          <Route path="browse" element={<BrowsePage />} />
          <Route path="profile/recruiter" element={<RecruiterPage />} />
          <Route path="skills" element={<SkillsPage />} />
+         <Route path="work-experience" element={<WorkExperiencePage />} />
          <Route path="profile/developer" element={<DeveloperPage />} />
          <Route path="profile/adventurer" element={<AdventurerPage />} />
          <Route path="profile/stalker" element={<StalkerPage />} />

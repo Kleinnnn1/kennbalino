@@ -35,7 +35,7 @@ function Navbar() {
         {/* Navigation Links */}
         <ul className="flex space-x-6 text-white font-medium text-sm">
           <li onClick={() => navigate("/browse")} className="hover:text-red-400 cursor-pointer">Home</li>
-          <li onClick={() => navigate("/professional")} className="hover:text-red-400 cursor-pointer">Professional</li>
+          <li onClick={() => navigate("/work-experience")} className="hover:text-red-400 cursor-pointer">Professional</li>
           <li onClick={() => navigate("/skills")} className="hover:text-red-400 cursor-pointer">Skills</li>
           <li onClick={() => navigate("/projects")} className="hover:text-red-400 cursor-pointer">Projects</li>
           <li onClick={() => navigate("/hire-me")} className="hover:text-red-400 cursor-pointer">Hire Me</li>

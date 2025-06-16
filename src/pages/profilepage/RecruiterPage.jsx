@@ -62,7 +62,7 @@ function RecruiterPage() {
             <div className="bg-black text-white py-6">
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
                     <BoxItem image={skills} label="Skills" to="/skills" />
-                    <BoxItem image={experience} label="Experience" />
+                    <BoxItem image={experience} label="Experience" to="/work-experience" />
                     <BoxItem image={certs} label="Certifications" />
                     <BoxItem image={projects} label="Projects" />
                 </div>
