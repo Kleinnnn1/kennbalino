@@ -10,22 +10,26 @@ function TimeLine() {
             {/* Top Icon (Blue Bag Icon - Raised) */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
                 <div className="relative flex items-center justify-center w-16 h-16 rounded-full bg-blue-500 border-4 border-white z-10">
+                    {/* Modern Briefcase Icon */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-8 w-8 text-white"
+                        className="h-6 w-6 text-white transform scale-x-125"
                         viewBox="0 0 24 24"
                         fill="currentColor"
                     >
-                        <path d="M10 2h4a2 2 0 012 2v2h4a1 1 0 011 1v2h-2v11a2 2 0 01-2 2H7a2 2 0 01-2-2V9H3V7a1 1 0 011-1h4V4a2 2 0 012-2zm4 4V4h-4v2h4z" />
+                        <path d="M10 2C8.895 2 8 2.895 8 4v2H6c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2h-2V4c0-1.105-.895-2-2-2h-4zm0 2h4v2h-4V4zm10 6H4v10h16V10z" />
                     </svg>
+
                 </div>
             </div>
 
+
             <TimeLineBox
-                date="June 2021 - July 2025"
-                title="University of Science and Technology of Southern Philippines"
-                degree="Bachelor of Science and Information Technology"
-                description="Designed and developed an online Job Request System, streamlining the school’s manual process. Successfully reduced administrative workload by 40%."
+                date="Jan 2025 - June 2025"
+                title="IT Support and WordPress Developer"
+                degree="BrightWay PH 🏢"
+                description="Designed and deployed a WordPress CMS site for a life insurance company, increasing online
+                inquiries by 35% and doubling applicant engagement within 5 months."
                 direction="left"
             />
 
@@ -44,7 +48,7 @@ function TimeLine() {
                     <TimeLineBox
                         date="June 2021 - July 2025"
                         title="University of Science and Technology of Southern Philippines"
-                        degree="Bachelor of Science and Information Technology"
+                        degree="Bachelor of Science and Information Technology🏅"
                         description="Designed and developed an online Job Request System, streamlining the school’s manual process. Successfully reduced administrative workload by 40%."
                         direction="right"
                     />

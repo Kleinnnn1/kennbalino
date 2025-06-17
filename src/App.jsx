@@ -7,19 +7,21 @@ import AdventurerPage from './pages/profilepage/AdventurerPage';
 import StalkerPage from './pages/profilepage/stalkerPage';
 import SkillsPage from './pages/boxpage/SkillsPage';
 import WorkExperiencePage from './pages/boxpage/WorkExperiencePage';
+import ProjectsPage from "./pages/boxpage/ProjectsPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Landpage />} />
-         <Route path="browse" element={<BrowsePage />} />
-         <Route path="profile/recruiter" element={<RecruiterPage />} />
-         <Route path="skills" element={<SkillsPage />} />
-         <Route path="work-experience" element={<WorkExperiencePage />} />
-         <Route path="profile/developer" element={<DeveloperPage />} />
-         <Route path="profile/adventurer" element={<AdventurerPage />} />
-         <Route path="profile/stalker" element={<StalkerPage />} />
+        <Route path="browse" element={<BrowsePage />} />
+        <Route path="profile/developer" element={<DeveloperPage />} />
+        <Route path="profile/adventurer" element={<AdventurerPage />} />
+        <Route path="profile/stalker" element={<StalkerPage />} />
+        <Route path="profile/recruiter" element={<RecruiterPage />} />
+        <Route path="skills" element={<SkillsPage />} />
+        <Route path="work-experience" element={<WorkExperiencePage />} />
+        <Route path="projects" element={<ProjectsPage />} />
       </Routes>
     </Router>
   );

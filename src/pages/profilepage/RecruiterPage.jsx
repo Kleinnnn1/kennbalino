@@ -27,7 +27,7 @@ function RecruiterPage() {
                     loop
                     muted
                     playsInline
-                    className="w-screen h-[500px] object-fill pixelated"
+                    className="w-screen h-[500px] object-fill blur-[1.5px]"
                 />
 
                 {/* Dark Overlay */}
@@ -39,7 +39,7 @@ function RecruiterPage() {
                     <div className="-ml-10">
                         <h4 className="text-3xl font-bold mt-40">Kenneth Jhun N. Balino - Web Developer</h4>
                         <p className="mt-2 text-sm md:text-base max-w-3xl font-medium">
-                            Full-Stack Web Developer skilled in React, Django, Supabase and PostgreSQL, with a track record of building
+                            Full-Stack Web Developer skilled in React, Django, Supabase and PostgreSQL, and SQL with a track record of building
                             systems that boost efficiency by up to 40% and cut manual work by 30%. Delivered real-time platforms,
                             finance trackers, and CMS websites that increased engagement and streamlined operations. Recently
                             improved site uptime and support response as an IT Support and WordPress Developer. Passionate about
@@ -61,10 +61,10 @@ function RecruiterPage() {
             {/* Box Grid */}
             <div className="bg-black text-white py-6">
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
-                    <BoxItem image={skills} label="Skills" to="/skills" />
-                    <BoxItem image={experience} label="Experience" to="/work-experience" />
-                    <BoxItem image={certs} label="Certifications" />
-                    <BoxItem image={projects} label="Projects" />
+                    <BoxItem image={skills} label="Skills" to="/skills" delay={0} />
+                    <BoxItem image={experience} label="Experience" to="/work-experience" delay={0.2} />
+                    <BoxItem image={certs} label="Certifications" delay={0.4} />
+                    <BoxItem image={projects} label="Projects" to="/projects" delay={0.6} />
                 </div>
             </div>
 
@@ -74,10 +74,10 @@ function RecruiterPage() {
             {/* Box Grid */}
             <div className="bg-black text-white py-6">
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
-                    <BoxItem image={music} label="Music" />
-                    <BoxItem image={reading} label="Reading" />
-                    <BoxItem image={blogs} label="Blogs" />
-                    <BoxItem image={contactme} label="Contact Me" />
+                    <BoxItem image={music} label="Music" delay={0} />
+                    <BoxItem image={reading} label="Reading" delay={0.2} />
+                    <BoxItem image={blogs} label="Blogs" delay={0.4} />
+                    <BoxItem image={contactme} label="Contact Me"delay={0.6} />
                 </div>
             </div>
         </div>
