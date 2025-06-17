@@ -77,7 +77,7 @@ function RecruiterPage() {
                     <BoxItem image={music} label="Music" delay={0} />
                     <BoxItem image={reading} label="Reading" delay={0.2} />
                     <BoxItem image={blogs} label="Blogs" delay={0.4} />
-                    <BoxItem image={contactme} label="Contact Me"delay={0.6} />
+                    <BoxItem image={contactme} label="Contact Me" to="/contact-me" delay={0.6} />
                 </div>
             </div>
         </div>

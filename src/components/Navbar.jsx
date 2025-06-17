@@ -38,7 +38,7 @@ function Navbar() {
           <li onClick={() => navigate("/work-experience")} className="hover:text-red-400 cursor-pointer">Professional</li>
           <li onClick={() => navigate("/skills")} className="hover:text-red-400 cursor-pointer">Skills</li>
           <li onClick={() => navigate("/projects")} className="hover:text-red-400 cursor-pointer">Projects</li>
-          <li onClick={() => navigate("/hire-me")} className="hover:text-red-400 cursor-pointer">Hire Me</li>
+          <li onClick={() => navigate("/contact-me")} className="hover:text-red-400 cursor-pointer">Hire Me</li>
         </ul>
 
         {/* Profile/Image */}
