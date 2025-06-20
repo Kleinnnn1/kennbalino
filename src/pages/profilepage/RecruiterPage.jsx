@@ -63,8 +63,8 @@ function RecruiterPage() {
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
                     <BoxItem image={skills} label="Skills" to="/skills" delay={0} />
                     <BoxItem image={experience} label="Experience" to="/work-experience" delay={0.2} />
-                    <BoxItem image={certs} label="Certifications" delay={0.4} />
-                    <BoxItem image={projects} label="Projects" to="/projects" delay={0.6} />
+                    {/* <BoxItem image={certs} label="Certifications" delay={0.4} /> */}
+                    <BoxItem image={projects} label="Projects" to="/projects" delay={0.4} />
                 </div>
             </div>
 
@@ -74,10 +74,10 @@ function RecruiterPage() {
             {/* Box Grid */}
             <div className="bg-black text-white py-6">
                 <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
-                    <BoxItem image={music} label="Music" delay={0} />
-                    <BoxItem image={reading} label="Reading" delay={0.2} />
-                    <BoxItem image={blogs} label="Blogs" delay={0.4} />
-                    <BoxItem image={contactme} label="Contact Me" to="/contact-me" delay={0.6} />
+                    <BoxItem image={music} label="Music" delay={0} to="/music" />
+                    {/* <BoxItem image={reading} label="Reading" delay={0.2} />
+                    <BoxItem image={blogs} label="Blogs" delay={0.4} /> */}
+                    <BoxItem image={contactme} label="Contact Me" to="/contact-me" delay={0.2} />
                 </div>
             </div>
         </div>
