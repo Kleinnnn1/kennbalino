@@ -3,7 +3,8 @@ import Navbar from "../../components/Navbar";
 import TechTag from "../../components/TechTag";
 import ProjectsBox from "../../components/ProjectsBox";
 import { FaHtml5, FaCss3Alt, FaWordpress, FaReact, FaCloud  } from "react-icons/fa";
-import { SiElementor, SiDjango, SiSupabase, SiDigitalocean } from "react-icons/si";
+import { SiElementor, SiDjango, SiSupabase, SiDigitalocean, SiRender } from "react-icons/si";
+import { MdPlayArrow } from "react-icons/md";
 
 import brightway from "../../assets/images/projects/brightway.png";
 import jrs from "../../assets/images/projects/jrs.png";
@@ -32,6 +33,7 @@ const projects = [
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiDjango, label: "Django", color: "text-green-500" },
+            { icon: SiRender, label: "Render", color: "text-white-500" },
         ],
     },
     {
@@ -42,7 +44,7 @@ const projects = [
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
-            { icon: FaCloud, label: "Vercel", color: "text-gray-300" }
+            { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
         ],
     },
     {
@@ -52,7 +54,7 @@ const projects = [
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
-            { icon: FaCloud, label: "Vercel", color: "text-gray-300" }
+            { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
         ],
     },
     {
@@ -71,7 +73,7 @@ const projects = [
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
-            { icon: FaCloud, label: "Vercel", color: "text-gray-300" }
+            { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
         ],
     },
 ];
