@@ -2,14 +2,15 @@ import { useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import TechTag from "../../components/TechTag";
 import ProjectsBox from "../../components/ProjectsBox";
-import { FaHtml5, FaCss3Alt, FaWordpress, FaReact } from "react-icons/fa";
-import { SiElementor, SiDjango, SiSupabase } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaWordpress, FaReact, FaCloud  } from "react-icons/fa";
+import { SiElementor, SiDjango, SiSupabase, SiDigitalocean } from "react-icons/si";
 
 import brightway from "../../assets/images/projects/brightway.png";
 import jrs from "../../assets/images/projects/jrs.png";
 import happyMeter from "../../assets/images/projects/happymeter.png";
 import cashflow from "../../assets/images/projects/cashflow.png";
 import apxwifi from "../../assets/images/projects/apxwifi.png";
+import warehouseINVS from "../../assets/images/projects/warehouseINVS.png"
 
 const projects = [
     {
@@ -20,6 +21,7 @@ const projects = [
         techs: [
             { icon: FaWordpress, label: "WordPress", color: "text-blue-400" },
             { icon: SiElementor, label: "Elementor", color: "text-pink-400" },
+            { icon: SiDigitalocean , label: "Digital Ocean", color: "text-blue-400" },
         ],
     },
     {
@@ -40,6 +42,7 @@ const projects = [
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
+            { icon: FaCloud, label: "Vercel", color: "text-gray-300" }
         ],
     },
     {
@@ -48,7 +51,8 @@ const projects = [
         description: "Simple cash flow tracker using React and Supabase.",
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
-            { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" }
+            { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
+            { icon: FaCloud, label: "Vercel", color: "text-gray-300" }
         ],
     },
     {
@@ -58,6 +62,16 @@ const projects = [
         techs: [
             { icon: FaHtml5, label: "HTML5", color: "text-orange-500" },
             { icon: FaCss3Alt, label: "CSS3", color: "text-blue-500" },
+        ],
+    },
+        {
+        image: warehouseINVS,
+        title: "Warehouse INVS",
+        description: "A fast, efficient, and intuitive warehouse inventory system built to streamline stock management. It allows precise tracking of tools, office supplies, and equipment, enhanced with built‑in notifications, QR support, and real‑time issuance monitoring.",
+        techs: [
+            { icon: FaReact, label: "React", color: "text-cyan-400" },
+            { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
+            { icon: FaCloud, label: "Vercel", color: "text-gray-300" }
         ],
     },
 ];

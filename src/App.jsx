@@ -4,7 +4,7 @@ import BrowsePage from './pages/browsepage/BrowsePage';
 import RecruiterPage from './pages/profilepage/recruiterPage';
 import DeveloperPage from './pages/profilepage/developerPage';
 import AdventurerPage from './pages/profilepage/AdventurerPage';
-import StalkerPage from './pages/profilepage/stalkerPage';
+import HorrorPage from './pages/profilepage/HorrorPage';
 import SkillsPage from './pages/boxpage/SkillsPage';
 import WorkExperiencePage from './pages/boxpage/WorkExperiencePage';
 import ProjectsPage from "./pages/boxpage/ProjectsPage";
@@ -19,7 +19,7 @@ function App() {
         <Route path="browse" element={<BrowsePage />} />
         <Route path="profile/developer" element={<DeveloperPage />} />
         <Route path="profile/adventurer" element={<AdventurerPage />} />
-        <Route path="profile/stalker" element={<StalkerPage />} />
+        <Route path="profile/horror" element={<HorrorPage />} />
         <Route path="profile/recruiter" element={<RecruiterPage />} />
         <Route path="skills" element={<SkillsPage />} />
         <Route path="work-experience" element={<WorkExperiencePage />} />

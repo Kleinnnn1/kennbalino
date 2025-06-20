@@ -13,7 +13,7 @@ function BrowsePage() {
         { name: "Recruiter", img: netflixBlue },
         { name: "Developer", img: netflixGreen },
         { name: "Adventurer", img: netflixYellow },
-        { name: "Stalker", img: netflixRed },
+        { name: "Horror", img: netflixRed },
     ];
 
     const handleProfileClick = (profile) => {
