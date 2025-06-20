@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landpage from './pages/landpage/Landpage';
 import BrowsePage from './pages/browsepage/BrowsePage';
-import RecruiterPage from './pages/profilepage/recruiterPage';
+import RecruiterPage from './pages/profilepage/RecruiterPage';
 import DeveloperPage from './pages/profilepage/developerPage';
 import AdventurerPage from './pages/profilepage/AdventurerPage';
 import HorrorPage from './pages/profilepage/HorrorPage';
