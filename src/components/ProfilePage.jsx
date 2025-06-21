@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import ResumeButton from "../components/ResumeButton";
 import LinkedInButton from "../components/LinkedInButton";
@@ -10,9 +11,17 @@ import music from "../assets/images/boximage/musicimage.jpg";
 import contactme from "../assets/images/boximage/contactmeimage.jpg";
 
 function ProfilePage({ videoSrc, title }) {
+  const location = useLocation();
+  // Extract the last part of the path after "/profile/"
+  const profileName = location.pathname.split("/profile/")[1];
+  // Capitalize the first letter
+  const profileLabel = profileName ? profileName.charAt(0).toUpperCase() + profileName.slice(1) : "User";
+
   return (
     <div className="bg-black min-h-screen text-white">
       <Navbar />
+
+      {/* Hero Section */}
       <div className="relative">
         <video
           src={videoSrc}
@@ -20,13 +29,14 @@ function ProfilePage({ videoSrc, title }) {
           loop
           muted
           playsInline
-          className="w-screen h-[500px] object-fill blur-[1.5px]"
+          className="w-screen h-[500px] md:h-[500px] h-screen object-cover blur-[1.5px]"
         />
+
         <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-16 text-white space-y-6">
-          <div className="-ml-10">
-            <h4 className="text-3xl font-bold mt-40">{title}</h4>
-            <p className="mt-2 text-sm md:text-base max-w-3xl font-medium">
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 md:items-start md:px-16 text-white space-y-6 text-center md:text-left">
+          <div className="md:-ml-10">
+            <h4 className="text-2xl md:text-3xl font-bold mt-20 md:mt-40">{title}</h4>
+            <p className="mt-2 text-sm md:text-base max-w-xl md:max-w-3xl font-medium">
               Full-Stack Web Developer skilled in React, Django, Supabase and PostgreSQL, and SQL with a track record of building
               systems that boost efficiency by up to 40% and cut manual work by 30%. Delivered real-time platforms,
               finance trackers, and CMS websites that increased engagement and streamlined operations. Recently
@@ -34,14 +44,15 @@ function ProfilePage({ videoSrc, title }) {
               solving problems and driving impact through clean, scalable code.
             </p>
           </div>
-          <div className="flex space-x-4 mt-4 -ml-10">
-            <ResumeButton />
-            <LinkedInButton />
+          <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto md:-ml-10">
+            <ResumeButton className="h-12 w-full md:w-auto" />
+            <LinkedInButton className="h-12 w-full md:w-auto" />
           </div>
         </div>
       </div>
 
-      <h4 className="text-3xl font-bold mt-16 ml-10">Today's Top Pick for Recruiter</h4>
+      {/* Top Pick Section */}
+      <h4 className="text-3xl font-bold mt-16 ml-10">Today's Top Pick for {profileLabel}</h4>
       <div className="bg-black text-white py-6">
         <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
           <BoxItem image={skills} label="Skills" to="/skills" delay={0} />
@@ -50,7 +61,8 @@ function ProfilePage({ videoSrc, title }) {
         </div>
       </div>
 
-      <h4 className="text-3xl font-bold mt-16 ml-10">Continue Watching for Recruiter</h4>
+      {/* Continue Watching Section */}
+      <h4 className="text-3xl font-bold mt-16 ml-10">Continue Watching for {profileLabel}</h4>
       <div className="bg-black text-white py-6">
         <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
           <BoxItem image={music} label="Music" to="/music" delay={0} />

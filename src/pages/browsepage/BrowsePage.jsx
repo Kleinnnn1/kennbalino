@@ -20,7 +20,7 @@ function BrowsePage() {
         setProfile(profile); // Save to store
 
         // Log saved image (optional: confirm if it's saved right after)
-        console.log("Saved profile image:", profile.img);
+        // console.log("Saved profile image:", profile.img);
 
         const routeName = profile.name.toLowerCase();
         navigate(`/profile/${routeName}`);
