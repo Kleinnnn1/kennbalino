@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import TechTag from "../../components/TechTag";
 import ProjectsBox from "../../components/ProjectsBox";
-import { FaHtml5, FaCss3Alt, FaWordpress, FaReact, FaCloud  } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaWordpress, FaReact, FaCloud } from "react-icons/fa";
 import { SiElementor, SiDjango, SiSupabase, SiDigitalocean, SiRender } from "react-icons/si";
 import { MdPlayArrow } from "react-icons/md";
 
@@ -22,7 +22,7 @@ const projects = [
         techs: [
             { icon: FaWordpress, label: "WordPress", color: "text-blue-400" },
             { icon: SiElementor, label: "Elementor", color: "text-pink-400" },
-            { icon: SiDigitalocean , label: "Digital Ocean", color: "text-blue-400" },
+            { icon: SiDigitalocean, label: "Digital Ocean", color: "text-blue-400" },
         ],
     },
     {
@@ -66,7 +66,7 @@ const projects = [
             { icon: FaCss3Alt, label: "CSS3", color: "text-blue-500" },
         ],
     },
-        {
+    {
         image: warehouseINVS,
         title: "Warehouse INVS",
         description: "A fast, efficient, and intuitive warehouse inventory system built to streamline stock management. It allows precise tracking of tools, office supplies, and equipment, enhanced with built‑in notifications, QR support, and real‑time issuance monitoring.",
@@ -91,12 +91,10 @@ function ProjectsPage() {
                     Projects
                 </h1>
 
-                <div className="flex flex-wrap justify-start gap-6">
+                <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
                     {projects.map((project, index) => (
-                        <div
-                            key={index}
-                            className={`${index === projects.length - 1 ? "mb-30" : ""}`}
-                        >
+                        <div key={index} className="h-full">
+
                             <ProjectsBox image={project.image} index={index}>
                                 <h2 className="text-lg font-bold text-red-500 mb-2">
                                     {project.title}
