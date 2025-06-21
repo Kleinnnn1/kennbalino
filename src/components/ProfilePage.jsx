@@ -53,20 +53,23 @@ function ProfilePage({ videoSrc, title }) {
 
       {/* Top Pick Section */}
       <h4 className="text-3xl font-bold mt-16 ml-10">Today's Top Pick for {profileLabel}</h4>
-      <div className="bg-black text-white py-6">
-        <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="overflow-x-auto scrollbar-hidden">
+        <div className="flex gap-4 px-10 py-6">
           <BoxItem image={skills} label="Skills" to="/skills" delay={0} />
           <BoxItem image={experience} label="Experience" to="/work-experience" delay={0.2} />
           <BoxItem image={projects} label="Projects" to="/projects" delay={0.4} />
+          {/* Add more items if needed */}
         </div>
-      </div>
+      </div>s
+
 
       {/* Continue Watching Section */}
       <h4 className="text-3xl font-bold mt-16 ml-10">Continue Watching for {profileLabel}</h4>
-      <div className="bg-black text-white py-6">
-        <div className="px-10 grid grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="bg-black text-white py-6 overflow-x-auto scrollbar-hidden">
+        <div className="flex gap-4 px-10">
           <BoxItem image={music} label="Music" to="/music" delay={0} />
           <BoxItem image={contactme} label="Contact Me" to="/contact-me" delay={0.2} />
+          {/* You can add more BoxItems here without worrying about overflow */}
         </div>
       </div>
     </div>
