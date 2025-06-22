@@ -60,7 +60,7 @@ function ProfilePage({ videoSrc, title }) {
           <BoxItem image={projects} label="Projects" to="/projects" delay={0.4} />
           {/* Add more items if needed */}
         </div>
-      </div>s
+      </div>
 
 
       {/* Continue Watching Section */}

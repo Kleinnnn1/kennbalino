@@ -28,31 +28,40 @@ function MusicPage() {
                     ))}
                 </div>
 
-                {/* Favorite Albums */}
-                <h2 className="text-xl font-semibold mb-5">Favorite Albums</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                    <MusicBox
-                        title="I Don't Love You"
-                        artist="My Chemical Romance"
-                        image={myChemicalRomance}
-                    />
-                    <MusicBox
-                        title="Cancer"
-                        artist="My Chemical Romance"
-                        image={myChemicalRomance}
-                    />
-                    <MusicBox
-                        title="Helena"
-                        artist="My Chemical Romance"
-                        image={myChemicalRomance}
-                    />
+{/* Favorite Albums */}
+<h2 className="text-xl font-semibold mb-5">Favorite Albums</h2>
 
-                    <MusicBox
-                        title="Famous Last Words"
-                        artist="My Chemical Romance"
-                        image={myChemicalRomance}
-                    />
-                </div>
+<div className="w-full flex justify-center">
+  <div className="overflow-x-auto scrollbar-hidden">
+    <div className="flex items-center gap-4 min-w-max px-2 py-4">
+      <MusicBox
+        title="I Don't Love You"
+        artist="My Chemical Romance"
+        image={myChemicalRomance}
+        delay={0}
+      />
+      <MusicBox
+        title="Cancer"
+        artist="My Chemical Romance"
+        image={myChemicalRomance}
+        delay={0.2}
+      />
+      <MusicBox
+        title="Helena"
+        artist="My Chemical Romance"
+        image={myChemicalRomance}
+        delay={0.4}
+      />
+      <MusicBox
+        title="Famous Last Words"
+        artist="My Chemical Romance"
+        image={myChemicalRomance}
+        delay={0.6}
+      />
+    </div>
+  </div>
+</div>
+
             </div>
         </div>
     );
