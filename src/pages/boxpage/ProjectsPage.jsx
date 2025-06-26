@@ -19,6 +19,7 @@ const projects = [
         title: "Brightway",
         description:
             "A business website for a startup insurance company to get more clients. This website is built using WordPress Elementor and deployed using DigitalOcean.",
+        link: "https://brightway.com.ph",
         techs: [
             { icon: FaWordpress, label: "WordPress", color: "text-blue-400" },
             { icon: SiElementor, label: "Elementor", color: "text-pink-400" },
@@ -30,6 +31,7 @@ const projects = [
         title: "Job Request System",
         description:
             "A digital platform that streamlines campus maintenance by replacing traditional paper-based processes. Staff can easily submit, track, and manage maintenance requests online, improving response times, reducing paperwork, and enhancing overall efficiency. This website is build using Django and React, and deployed in Render.",
+        link: "http://ustpjrs.onrender.com/",
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiDjango, label: "Django", color: "text-green-500" },
@@ -41,6 +43,18 @@ const projects = [
         title: "HappyMeter",
         description:
             "A web-based feedback and reporting tool designed to monitor and track employee satisfaction in the workplace, helping organizations gain insights and improve office morale and productivity. This website is build using React and Supabase and deployed using Vercel.",
+        link: "https://happy-meter-rating-pabe.vercel.app/",
+        techs: [
+            { icon: FaReact, label: "React", color: "text-cyan-400" },
+            { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
+            { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
+        ],
+    },
+    {
+        image: warehouseINVS,
+        title: "Warehouse INVS",
+        description: "A fast, efficient, and intuitive warehouse inventory system built to streamline stock management. It allows precise tracking of tools, office supplies, and equipment, enhanced with built‑in notifications, QR support, and real‑time issuance monitoring.",
+        link: "https://warehouse-invs.vercel.app/",
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
@@ -51,6 +65,7 @@ const projects = [
         image: cashflow,
         title: "CashFlow",
         description: "Simple cash flow tracker using React and Supabase.",
+        link: "https://cashflow-system-khaki.vercel.app/",
         techs: [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
@@ -64,16 +79,6 @@ const projects = [
         techs: [
             { icon: FaHtml5, label: "HTML5", color: "text-orange-500" },
             { icon: FaCss3Alt, label: "CSS3", color: "text-blue-500" },
-        ],
-    },
-    {
-        image: warehouseINVS,
-        title: "Warehouse INVS",
-        description: "A fast, efficient, and intuitive warehouse inventory system built to streamline stock management. It allows precise tracking of tools, office supplies, and equipment, enhanced with built‑in notifications, QR support, and real‑time issuance monitoring.",
-        techs: [
-            { icon: FaReact, label: "React", color: "text-cyan-400" },
-            { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
-            { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
         ],
     },
 ];
@@ -95,7 +100,7 @@ function ProjectsPage() {
                     {projects.map((project, index) => (
                         <div key={index} className="h-full">
 
-                            <ProjectsBox image={project.image} index={index}>
+                            <ProjectsBox image={project.image} index={index} link={project.link}>
                                 <h2 className="text-lg font-bold text-red-500 mb-2">
                                     {project.title}
                                 </h2>
