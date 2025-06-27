@@ -9,6 +9,7 @@ import experience from "../assets/images/boximage/experienceimage.png";
 import projects from "../assets/images/boximage/projectsimage.jpg";
 import music from "../assets/images/boximage/musicimage.jpg";
 import contactme from "../assets/images/boximage/contactmeimage.jpg";
+import { useState } from "react";
 
 function ProfilePage({ videoSrc, title }) {
   const location = useLocation();
@@ -16,6 +17,7 @@ function ProfilePage({ videoSrc, title }) {
   const profileName = location.pathname.split("/profile/")[1];
   // Capitalize the first letter
   const profileLabel = profileName ? profileName.charAt(0).toUpperCase() + profileName.slice(1) : "User";
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   return (
     <div className="bg-black min-h-screen text-white">
@@ -23,12 +25,20 @@ function ProfilePage({ videoSrc, title }) {
 
       {/* Hero Section */}
       <div className="relative">
+        {!isVideoLoaded && (
+          <div className="absolute inset-0 flex items-center justify-center z-10 bg-black/50">
+            <div className="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin" />
+          </div>
+        )}
+
+
         <video
           src={videoSrc}
           autoPlay
           loop
           muted
           playsInline
+          onCanPlayThrough={() => setIsVideoLoaded(true)}
           className="w-screen h-[500px] md:h-[500px] h-screen object-cover blur-[1.5px]"
         />
 

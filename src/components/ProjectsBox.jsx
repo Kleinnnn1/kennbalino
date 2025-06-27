@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 function ProjectsBox({ image, index, children, link }) {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   const handleMobileClick = () => {
     if (window.innerWidth < 768 && link) {
       window.open(link, "_blank");
@@ -17,9 +20,15 @@ function ProjectsBox({ image, index, children, link }) {
     >
       {/* Image container with overlay */}
       <div className="relative w-full h-48 overflow-hidden">
+        {!isImageLoaded && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-10">
+            <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin" />
+          </div>
+        )}
         <img
           src={image}
           alt="Project Preview"
+          onLoad={() => setIsImageLoaded(true)}
           className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
         />
 
