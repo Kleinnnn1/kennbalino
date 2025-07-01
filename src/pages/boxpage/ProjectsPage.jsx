@@ -12,6 +12,7 @@ import happyMeter from "../../assets/images/projects/happymeter.png";
 import cashflow from "../../assets/images/projects/cashflow.png";
 import apxwifi from "../../assets/images/projects/apxwifi.png";
 import warehouseINVS from "../../assets/images/projects/warehouseINVS.png"
+import AIConvesation from "../../assets/images/projects/aibuilderimg.png"
 
 const projects = [
     {
@@ -59,6 +60,17 @@ const projects = [
             { icon: FaReact, label: "React", color: "text-cyan-400" },
             { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
             { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
+        ],
+    },
+    {
+        image: AIConvesation,
+        title: "AI Conversation App",
+        description: "A voice-enabled chat application that lets users talk to an AI using text or speech. Built with React for the frontend and Django for the backend, it integrates Google Gemini API for smart responses.",
+        link: "https://ai-builder-ae1p.onrender.com/",
+        techs: [
+            { icon: FaReact, label: "React", color: "text-cyan-400" },
+            { icon: SiSupabase, label: "Supabase", color: "text-emerald-400" },
+            { icon: SiRender, label: "Render", color: "text-white-500" },
         ],
     },
     {
