@@ -5,6 +5,7 @@ import ProjectsBox from "../../components/ProjectsBox";
 import { FaHtml5, FaCss3Alt, FaWordpress, FaReact, FaCloud } from "react-icons/fa";
 import { SiElementor, SiDjango, SiSupabase, SiDigitalocean, SiRender } from "react-icons/si";
 import { MdPlayArrow } from "react-icons/md";
+import { RiNextjsFill } from "react-icons/ri";
 
 import brightway from "../../assets/images/projects/brightway.png";
 import jrs from "../../assets/images/projects/jrs.png";
@@ -13,8 +14,21 @@ import cashflow from "../../assets/images/projects/cashflow.png";
 import apxwifi from "../../assets/images/projects/apxwifi.png";
 import warehouseINVS from "../../assets/images/projects/warehouseINVS.png"
 import AIConvesation from "../../assets/images/projects/aibuilderimg.png"
+import tinkerPro from "../../assets/images/projects/tinkerproimg.png"
 
 const projects = [
+    {
+        image: tinkerPro,
+        title: "TinkerPro POS",
+        description:
+            "Tinker Pro is a modern website built for a startup offering a smart Point of Sale (POS) system that helps small business owners manage sales, track inventory, and view reports anytime, anywhere. With its clean and user-friendly design, it clearly shows how Tinker Pro can simplify business operations.",
+        link: "https://tinker-pro-website-ver-2.vercel.app/",
+        techs: [
+            { icon: RiNextjsFill, label: "NextJS", color: "text-white" },
+            { icon: FaReact, label: "React", color: "text-cyan-400" },
+            { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
+        ],
+    },
     {
         image: brightway,
         title: "Brightway",
@@ -110,7 +124,7 @@ function ProjectsPage() {
 
                 <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full">
                     {projects.map((project, index) => (
-                        <div key={index} className="h-full">
+                        <div key={index} className="h-full mb-15">
 
                             <ProjectsBox image={project.image} index={index} link={project.link}>
                                 <h2 className="text-lg font-bold text-red-500 mb-2">
