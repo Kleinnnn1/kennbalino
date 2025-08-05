@@ -6,6 +6,7 @@ import { FaHtml5, FaCss3Alt, FaWordpress, FaReact, FaCloud } from "react-icons/f
 import { SiElementor, SiDjango, SiSupabase, SiDigitalocean, SiRender } from "react-icons/si";
 import { MdPlayArrow } from "react-icons/md";
 import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
 
 import brightway from "../../assets/images/projects/brightway.png";
 import jrs from "../../assets/images/projects/jrs.png";
@@ -25,7 +26,7 @@ const projects = [
         link: "https://tinker-pro-website-ver-2.vercel.app/",
         techs: [
             { icon: RiNextjsFill, label: "NextJS", color: "text-white" },
-            { icon: FaReact, label: "React", color: "text-cyan-400" },
+            { icon: TbBrandTypescript, label: "Typescript", color: "text-cyan-400" },
             { icon: MdPlayArrow, label: "Vercel", color: "text-gray-300 transform -rotate-90 w-6 h-6" }
         ],
     },

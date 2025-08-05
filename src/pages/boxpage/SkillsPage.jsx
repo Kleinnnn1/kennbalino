@@ -4,8 +4,10 @@ import {
 } from "react-icons/fa";
 import {
     SiDjango, SiSupabase, SiTailwindcss, SiBootstrap,
-    SiPostgresql, SiMysql, SiFigma, SiWordpress
+    SiPostgresql, SiMysql, SiFigma, SiWordpress, SiCanva
 } from "react-icons/si";
+import { TbBrandTypescript } from "react-icons/tb";
+import { RiNextjsFill } from "react-icons/ri";
 import { DiJavascript1 } from "react-icons/di";
 import Navbar from "../../components/Navbar";
 import { useEffect } from "react";
@@ -36,9 +38,11 @@ function SkillsPage() {
 
     const frontendSkills = [
         { name: "React", desc: "JavaScript UI Library", icon: <FaReact className="text-red-500" size={40} /> },
+        { name: "Next.js", desc: "React Framework for Production", icon: <RiNextjsFill className="text-red-500" size={40} /> },
+        { name: "TypeScript", desc: "Typed JavaScript Superset", icon: <TbBrandTypescript className="text-red-500" size={40} /> },
+        { name: "JavaScript", desc: "Scripting Language", icon: <DiJavascript1 className="text-red-500" size={40} /> },
         { name: "Tailwind CSS", desc: "Utility-first CSS Framework", icon: <SiTailwindcss className="text-red-500" size={40} /> },
         { name: "Bootstrap", desc: "CSS Framework", icon: <SiBootstrap className="text-red-500" size={40} /> },
-        { name: "JavaScript", desc: "Scripting Language", icon: <DiJavascript1 className="text-red-500" size={40} /> },
     ];
 
     const databaseSkills = [
@@ -51,6 +55,7 @@ function SkillsPage() {
         { name: "Git", desc: "Version Control System", icon: <FaGitAlt className="text-red-500" size={40} /> },
         { name: "VS Code", desc: "Code Editor", icon: <FaCode className="text-red-500" size={40} /> },
         { name: "Figma", desc: "UI/UX Design Tool", icon: <SiFigma className="text-red-500" size={40} /> },
+        { name: "Canva", desc: "Graphic Design Platform", icon: <SiCanva className="text-red-500" size={40} /> },
         { name: "WordPress (Elementor)", desc: "CMS & Page Builder", icon: <SiWordpress className="text-red-500" size={40} /> },
     ];
 
