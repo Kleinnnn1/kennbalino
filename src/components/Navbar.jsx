@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import kennbalino from "../assets/images/kennbalino_logo_transparent.png";
 import netflixRed from "../assets/images/netflixicons/netflixred.jpg";
@@ -10,6 +10,7 @@ function Navbar() {
   const [scrollY, setScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -33,11 +34,11 @@ function Navbar() {
   const bgOpacity = Math.min(scrollY / 150, 1);
 
   const navLinks = [
-    { label: "Home", path: "/browse"},
-    { label: "Professional", path: "/work-experience"},
-    { label: "Skills", path: "/skills"},
-    { label: "Projects", path: "/projects"},
-    { label: "Hire Me", path: "/contact-me"},
+    { label: "Home", path: "/browse" },
+    { label: "Professional", path: "/work-experience" },
+    { label: "Skills", path: "/skills" },
+    { label: "Projects", path: "/projects" },
+    { label: "Hire Me", path: "/contact-me" },
   ];
 
   return (
@@ -63,7 +64,10 @@ function Navbar() {
               <li
                 key={link.label}
                 onClick={() => navigate(link.path)}
-                className="hover:text-red-400 cursor-pointer flex items-center space-x-1"
+                className={`cursor-pointer flex items-center space-x-1 transition-colors ${location.pathname === link.path
+                    ? "text-red-500 font-semibold"
+                    : "hover:text-red-400"
+                  }`}
               >
                 <span>{link.icon}</span>
                 <span>{link.label}</span>
@@ -117,7 +121,10 @@ function Navbar() {
                       navigate(link.path);
                       setIsMenuOpen(false);
                     }}
-                    className="flex items-center space-x-3 cursor-pointer hover:text-red-400"
+                    className={`flex items-center space-x-3 cursor-pointer transition-colors ${location.pathname === link.path
+                        ? "text-red-500"
+                        : "hover:text-red-400"
+                      }`}
                   >
                     <span className="text-xl">{link.icon}</span>
                     <span className="text-xl">{link.label}</span>

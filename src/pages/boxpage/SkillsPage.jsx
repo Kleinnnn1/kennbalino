@@ -4,7 +4,8 @@ import {
 } from "react-icons/fa";
 import {
     SiDjango, SiSupabase, SiTailwindcss, SiBootstrap,
-    SiPostgresql, SiMysql, SiFigma, SiWordpress, SiCanva
+    SiPostgresql, SiMysql, SiFigma, SiWordpress, SiCanva,
+    SiLaravel
 } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
 import { RiNextjsFill } from "react-icons/ri";
@@ -32,6 +33,7 @@ function SkillsPage() {
 
     const backendSkills = [
         { name: "Django (Python)", desc: "Python Web Framework", icon: <SiDjango className="text-red-500" size={40} /> },
+        { name: "Laravel", desc: "PHP Web Framework", icon: <SiLaravel className="text-red-500" size={40} /> },
         { name: "Supabase", desc: "Backend-as-a-Service (BaaS)", icon: <SiSupabase className="text-red-500" size={40} /> },
         { name: "PHP", desc: "Backend Language", icon: <FaPhp className="text-red-500" size={40} /> },
     ];

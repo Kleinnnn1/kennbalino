@@ -22,7 +22,7 @@ function WorkExperiencePage() {
         visible: { opacity: 1, y: 0 },
     };
 
-    const heading = "📅Work Experience & Education Timeline";
+    const heading = "Work Experience & Education Timeline";
 
     return (
         <div className="bg-black min-h-screen text-white py-12 px-6">
