@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 import { FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
-import profileImg from "../../assets/images/profileimg.jpg";
+import profileImg from "../../assets/images/prof_img.jpg";
 import { motion } from "framer-motion";
 
 function ContactMePage() {
@@ -26,10 +26,10 @@ function ContactMePage() {
                         </div>
                         <div className="text-left">
                             <h2 className="text-lg font-bold">Kenneth Jhun N. Balino</h2>
-                            <p className="text-sm text-gray-400">Web Developer</p>
+                            <p className="text-sm text-gray-400">Software Engineer</p>
                             <p className="text-sm mt-1 text-gray-300">
-                                Freelance Web Developer with experience in full-stack development using React, Django, and Supabase.
-                                I build scalable web apps and WordPress sites that improve efficiency and user engagement.
+                                Full-Stack Software Engineer proficient in React, Django, Laravel, and modern cloud technologies.
+                                Passionate about crafting robust, scalable applications that transform ideas into impactful digital solutions.
                             </p>
                             <a
                                 href="https://www.linkedin.com/in/kenneth-jhun-n-balino/"
