@@ -66,10 +66,10 @@ function ContactMePage() {
                         <span className="text-white text-base md:text-lg font-medium">kennbalino@gmail.com</span>
                     </div>
 
-                    <div className="flex items-center gap-4 bg-zinc-800 px-6 py-3 rounded-full shadow-lg hover:shadow-red-500/50 hover:ring-2 hover:ring-red-500 transition-all duration-300 transform hover:scale-105">
+                    {/* <div className="flex items-center gap-4 bg-zinc-800 px-6 py-3 rounded-full shadow-lg hover:shadow-red-500/50 hover:ring-2 hover:ring-red-500 transition-all duration-300 transform hover:scale-105">
                         <FaPhone className="text-red-500 text-xl" />
                         <span className="text-white text-base md:text-lg font-medium">+63 909 110 4535</span>
-                    </div>
+                    </div> */}
 
                 </motion.div>
 
