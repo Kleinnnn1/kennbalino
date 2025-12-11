@@ -40,6 +40,7 @@ function ProfilePage({ videoSrc, title }) {
           playsInline
           onCanPlayThrough={() => setIsVideoLoaded(true)}
           className="w-screen h-[500px] md:h-[500px] h-screen object-cover blur-[1.5px]"
+          style={{ objectPosition: 'center 25%' }}
         />
 
         <div className="absolute inset-0 bg-black/40" />
