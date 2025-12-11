@@ -15,7 +15,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Landpage />} />
+        {/* <Route path="/" element={<Landpage />} /> */}
+        <Route path="/" element={<BrowsePage />} />
         <Route path="browse" element={<BrowsePage />} />
         <Route path="profile/developer" element={<DeveloperPage />} />
         <Route path="profile/adventurer" element={<AdventurerPage />} />
