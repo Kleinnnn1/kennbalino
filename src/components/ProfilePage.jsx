@@ -48,10 +48,16 @@ function ProfilePage({ videoSrc, title }) {
           <div className="md:-ml-10">
             <h4 className="text-2xl md:text-3xl font-bold mt-20 md:mt-40">{title}</h4>
             <p className="mt-2 text-sm md:text-base max-w-xl md:max-w-3xl font-medium">
-              Full-Stack Software Engineer specializing in React, Django, Laravel, and Supabase. Proven track record of
-              building scalable systems that boost efficiency by 40% and reduce manual processes by 30%. Delivered
-              real-time platforms, finance trackers, and CMS solutions that drive engagement and streamline operations.
-              Passionate about solving complex problems through clean, maintainable code.
+              Full-Stack Software Engineer specializing in Laravel, React, and TypeScript.
+              <br />
+              Building production-ready web applications with modern tech stacks:
+              <br />
+              Laravel • Django • React • Next.js • TypeScript • MySQL • PostgreSQL • Supabase
+              <br />
+              Delivered POS systems, business management tools, tracking platforms,
+              and custom admin dashboards that solve real business problems.
+              <br />
+              Passionate about clean code, scalable architecture, and continuous learning.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto md:-ml-10">
