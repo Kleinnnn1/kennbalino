@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-    FaPhp, FaReact, FaGithub, FaGitAlt, FaCode
+    FaPhp, FaReact, FaGithub, FaGitAlt, FaCode, FaDocker
 } from "react-icons/fa";
 import {
     SiDjango, SiSupabase, SiTailwindcss, SiBootstrap,
@@ -53,6 +53,7 @@ function SkillsPage() {
     ];
 
     const otherTools = [
+        { name: "Docker", desc: "Containerization Platform", icon: <FaDocker className="text-red-500" size={40} /> },
         { name: "GitHub", desc: "Code Hosting Platform", icon: <FaGithub className="text-red-500" size={40} /> },
         { name: "Git", desc: "Version Control System", icon: <FaGitAlt className="text-red-500" size={40} /> },
         { name: "VS Code", desc: "Code Editor", icon: <FaCode className="text-red-500" size={40} /> },

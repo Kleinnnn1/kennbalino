@@ -1,4 +1,4 @@
-import resume from "../assets/pdf/balino-kennethjhun-noble.pdf";
+import resume from "../assets/pdf/balinokenn_resume.pdf";
 
 function ResumeButton() {
   return (

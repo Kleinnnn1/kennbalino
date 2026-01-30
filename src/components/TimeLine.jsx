@@ -23,7 +23,7 @@ function TimeLine() {
                     date="Present"
                     title="Software Engineer"
                     degree="TinkerPro POS"
-                    description="Transformed a legacy local POS system into a modern hybrid solution with real-time cloud sync and offline capabilities, ensuring 100% uptime and zero revenue loss during connectivity issues."
+                    description="Designed and developed a scalable cloud-based multi-branch POS system supporting high availability and growth across multiple branches and store types, including pharmacy, retail, and hardware businesses in the Philippines."
                     direction="left"
                 />
             </div>
