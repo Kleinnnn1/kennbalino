@@ -23,7 +23,7 @@ const projects = [
         title: "TinkerPro POS",
         description:
             "Tinker Pro is a modern website built for a startup offering a smart Point of Sale (POS) system that helps small business owners manage sales, track inventory, and view reports anytime, anywhere. With its clean and user-friendly design, it clearly shows how Tinker Pro can simplify business operations.",
-        link: "https://tinker-pro-website-ver-2.vercel.app/",
+        link: "https://tinkerpro.io/ph",
         techs: [
             { icon: RiNextjsFill, label: "NextJS", color: "text-white" },
             { icon: TbBrandTypescript, label: "Typescript", color: "text-cyan-400" },
