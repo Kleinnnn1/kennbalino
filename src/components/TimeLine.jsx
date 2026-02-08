@@ -41,7 +41,7 @@ function TimeLine() {
                     </svg>
                 </div>
                 <TimeLineBox
-                    date="Jan 2025 - June 2025"
+                    date="Jan 2024 - Dec 2024"
                     title="IT Support and WordPress Developer"
                     degree="BrightWay PH"
                     description="Designed and deployed a WordPress CMS site for a life insurance company, increasing online inquiries by 35% and doubling applicant engagement within 5 months."
