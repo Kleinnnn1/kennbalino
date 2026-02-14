@@ -26,9 +26,9 @@ function ContactMePage() {
                         </div>
                         <div className="text-left">
                             <h2 className="text-lg font-bold">Kenneth Jhun N. Balino</h2>
-                            <p className="text-sm text-gray-400">Software Engineer</p>
+                            <p className="text-sm text-gray-400">Web Developer</p>
                             <p className="text-sm mt-1 text-gray-300">
-                                Full-Stack Software Engineer proficient in React, Django, Laravel, and modern cloud technologies.
+                                Full-Stack Web Developer proficient in React, Django, Laravel, and modern cloud technologies.
                                 Passionate about crafting robust, scalable applications that transform ideas into impactful digital solutions.
                             </p>
                             <a

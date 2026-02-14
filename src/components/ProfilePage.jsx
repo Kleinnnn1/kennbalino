@@ -45,21 +45,24 @@ function ProfilePage({ videoSrc, title }) {
 
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 md:items-start md:px-16 text-white space-y-6 text-center md:text-left">
-          <div className="md:-ml-10">
-            <h4 className="text-2xl md:text-3xl font-bold mt-20 md:mt-40">{title}</h4>
-            <p className="mt-2 text-sm md:text-base max-w-xl md:max-w-3xl font-medium">
-              Full-Stack Software Engineer specializing in Laravel, React, and TypeScript.
-              <br />
-              Building production-ready web applications with modern tech stacks:
-              <br />
-              Laravel • Django • React • Next.js • TypeScript • MySQL • PostgreSQL • Supabase
-              <br />
-              Delivered POS systems, business management tools, tracking platforms,
-              and custom admin dashboards that solve real business problems.
-              <br />
-              Passionate about clean code, scalable architecture, and continuous learning.
-            </p>
+          <div className="md:-ml-10 mt-20 md:mt-40">
+            <div className="bg-gray-900/50 p-6 rounded-xl shadow-xl">
+              <h4 className="text-2xl md:text-3xl font-bold">
+                {title}
+              </h4>
+
+              <p className="mt-2 text-sm md:text-base max-w-xl md:max-w-3xl font-medium">
+                I am a Full-Stack Web Developer specializing in Laravel, React, and TypeScript, building
+                production-ready web applications using modern and scalable technology stacks. I have experience
+                developing end-to-end solutions with Laravel, Django, React, Next.js, TypeScript, MySQL, PostgreSQL,
+                and Supabase. I have delivered POS systems, business management tools, tracking platforms, and custom
+                admin dashboards designed to solve real-world business problems and improve operational efficiency.
+                I am passionate about writing clean, maintainable code, designing scalable system architectures,
+                continuously improving through hands-on development and learning.
+              </p>
+            </div>
           </div>
+
           <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto md:-ml-10">
             <ResumeButton className="h-12 w-full md:w-auto" />
             <LinkedInButton className="h-12 w-full md:w-auto" />

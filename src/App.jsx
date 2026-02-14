@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Routes>
         {/* Default route */}
-        <Route path="/" element={<ProjectsPage />} />
+        <Route path="/" element={<RecruiterPage />} />
 
         {/* Other pages */}
         <Route path="browse" element={<BrowsePage />} />

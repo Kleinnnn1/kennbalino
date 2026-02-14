@@ -21,7 +21,7 @@ function TimeLine() {
                 </div>
                 <TimeLineBox
                     date="Present"
-                    title="Software Engineer"
+                    title="Fullstack Web Developer"
                     degree="TinkerPro POS"
                     description="Designed and developed a scalable cloud-based multi-branch POS system supporting high availability and growth across multiple branches and store types, including pharmacy, retail, and hardware businesses in the Philippines."
                     direction="left"
@@ -41,7 +41,7 @@ function TimeLine() {
                     </svg>
                 </div>
                 <TimeLineBox
-                    date="Jan 2024 - Dec 2024"
+                    date="Jan 2025 - June 2025"
                     title="IT Support and WordPress Developer"
                     degree="BrightWay PH"
                     description="Designed and deployed a WordPress CMS site for a life insurance company, increasing online inquiries by 35% and doubling applicant engagement within 5 months."
